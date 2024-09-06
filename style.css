@@ -1,0 +1,69 @@
+/*Import the font family called outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*The universal selector provided by CSS helps in choosing any elements within the HTML page. 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors#:~:text=The%20CSS%20universal%20selector%20(%20*%20),be%20namespaced%20when%20using%20%40namespace%20.
+*/
+*{
+    margin: 0; padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "outfit";
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-bl: hsl(212, 46%, 89%);
+    --gray-bl: hsl(216, 15%, 48%);
+    --dark-bl: hsl(218, 44%, 22%);
+}
+body{
+    background: var(--light-bl);
+}
+p{
+    font-size: 15px;
+}
+.qr-body{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: block;
+    border-radius: 11px;
+    box-shadow: hsla(216, 15%, 48%, 0.151) .1rem .1rem .6rem;
+    width: 300px;
+    height: 27em;
+    margin: 6rem auto;
+}
+.container .box{
+    padding: 1rem;
+}
+.container .box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.container .box .box-info{
+    text-align: center;
+}
+.container .box .box-info h3{
+    font-size: 19px;
+    font-weight: 700;
+}
+.container .box .box-info p{
+    font-size: 15px;
+    font-weight: 400;
+}
+/*
+    RESPONSIVENESS SECTION
+    
+    Designs using the following widths:
+
+    - Mobile: 375px
+    - Desktop: 1440px
+
+*/
+
+/* Desktop: 1440px */
+/* Mobile: 375px */
